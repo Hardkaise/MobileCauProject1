@@ -36,9 +36,6 @@
     <string name="alarm_text">Hurry up ! Time to wake up !</string>
     <string name="alarm_title">Alarm</string>
     <string name="stop">Stop</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="set_a_memo">Set a memo</string>
     <string name="set_alarm">set alarm</string>
     <string name="alarm_set_to">Alarm set to: %1$s</string>

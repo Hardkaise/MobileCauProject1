@@ -12,7 +12,7 @@ android {
     }
     buildTypes {
         applicationVariants.all { variant ->
-            def appName = "CauProject1"
+            def appName = "My ostoMy"
             variant.outputs.all { output ->
                 outputFileName = new File(appName + "-" + variant.versionName + ".apk")
             }
