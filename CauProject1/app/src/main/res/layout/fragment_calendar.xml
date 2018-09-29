@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.homepage.CalendarFragment"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/calendar.memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/rounded_button"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/set_a_memo"/>
+
+    <Button
+        android:id="@+id/calendar.alarm"
+        style="@style/rounded_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/set_alarm" />
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:id="@+id/calendar.alarm.info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_set_to"
+        style="@style/home_text"/>
+</LinearLayout>

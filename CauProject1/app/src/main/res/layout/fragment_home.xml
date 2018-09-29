@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.homepage.HomeFragment"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/home.understand"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintRight_toLeftOf="@id/home.care"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/icon_understand_t" />
+
+    <ImageView
+        android:id="@+id/home.care"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/home.understand"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintRight_toLeftOf="@id/home.meal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/icon_care_t" />
+
+    <ImageView
+        android:id="@+id/home.meal"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/home.care"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/icon_meal_t" />
+
+    <ImageView
+        android:id="@+id/home.life"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintRight_toLeftOf="@id/home.calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/icon_life_t" />
+
+    <ImageView
+        android:id="@+id/home.calendar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/home.life"
+        app:layout_constraintRight_toLeftOf="@id/home.information"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/icon_calendar_t" />
+
+
+    <ImageView
+        android:id="@+id/home.information"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/home.calendar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/icon_information_t" />
+
+    <TextView
+        android:id="@+id/home.text.understand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Understand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home.understand"
+        app:layout_constraintStart_toStartOf="@+id/home.understand"
+        app:layout_constraintTop_toBottomOf="@+id/home.understand"
+        app:layout_constraintVertical_bias="0.0"
+        style="@style/home_text"/>
+
+    <TextView
+        android:id="@+id/home.text.care"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Care"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home.care"
+        app:layout_constraintStart_toStartOf="@+id/home.care"
+        app:layout_constraintTop_toBottomOf="@+id/home.care"
+        app:layout_constraintVertical_bias="0.0"
+        style="@style/home_text"/>
+
+    <TextView
+        android:id="@+id/home.text.meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Meal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home.meal"
+        app:layout_constraintStart_toStartOf="@+id/home.meal"
+        app:layout_constraintTop_toBottomOf="@+id/home.meal"
+        app:layout_constraintVertical_bias="0.0"
+        style="@style/home_text"/>
+
+    <TextView
+        android:id="@+id/home.text.life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Life"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home.life"
+        app:layout_constraintStart_toStartOf="@+id/home.life"
+        app:layout_constraintTop_toBottomOf="@+id/home.life"
+        app:layout_constraintVertical_bias="0.0"
+        style="@style/home_text"/>
+
+    <TextView
+        android:id="@+id/home.text.calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home.calendar"
+        app:layout_constraintStart_toStartOf="@+id/home.calendar"
+        app:layout_constraintTop_toBottomOf="@+id/home.calendar"
+        app:layout_constraintVertical_bias="0.0"
+        style="@style/home_text"/>
+
+    <TextView
+        android:id="@+id/home.text.information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home.information"
+        app:layout_constraintStart_toStartOf="@+id/home.information"
+        app:layout_constraintTop_toBottomOf="@+id/home.information"
+        app:layout_constraintVertical_bias="0.0"
+        style="@style/home_text"/>
+
+
+</android.support.constraint.ConstraintLayout>

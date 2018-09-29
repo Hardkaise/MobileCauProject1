@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.alarm.AlarmPickerActivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/alarm.info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_will_be_set_at"
+        android:layout_centerInParent="true"
+        style="@style/home_text"/>
+
+    <Button
+        android:id="@+id/alarm.accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/rounded_button"
+        style="@style/rounded_button_centered"
+        android:text="@string/done" />
+
+    <Button
+        android:id="@+id/alarm.set_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        style="@style/rounded_button_centered"
+        android:background="@drawable/rounded_button"
+        android:text="@string/set_new_alarm" />
+</RelativeLayout>
